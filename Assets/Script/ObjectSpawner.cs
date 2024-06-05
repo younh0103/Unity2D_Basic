@@ -132,7 +132,7 @@ public class ObjectSpawner : MonoBehaviour
             // spawnIndex 가 0인 오브젝트가 왼쪽에 있기 때문에 오른쪽으로 이동
             // spawnIndex 가 1인 오브젝트가 오른쪽에 있기 때문에 왼쪽으로 이동
             Vector3 moveDirection = (spawnIndex == 0 ? Vector3.right : Vector3.left);
-            clone.GetComponent<Movement2D>().Setup(moveDirection);
+            // clone.GetComponent<Movement2D>().Setup(moveDirection);
 
             currentObjectCount++;   // 현재 생성된 오브젝트의 개수를 1 증가
             objectSpawnTime = 0.0f; // 시간을 0으로 초기화해야 다시 0.5초를 계산할 수 있음.
